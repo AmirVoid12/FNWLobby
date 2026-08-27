@@ -5,7 +5,6 @@
 </p>
 
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue?style=flat-square" />
   <img alt="Minecraft" src="https://img.shields.io/badge/minecraft-1.8.8%20--%201.21.11-brightgreen?style=flat-square" />
   <img alt="Status" src="https://img.shields.io/badge/status-unstable%20%2F%20in%20development-orange?style=flat-square" />
   <img alt="License" src="https://img.shields.io/badge/license-private-lightgrey?style=flat-square" />
