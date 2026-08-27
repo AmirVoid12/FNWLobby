@@ -1,0 +1,26 @@
+name: FNWLobby
+main: iran.flame.network.lobby.Main
+version: 1.0
+author: AmirVoid12
+load: POSTWORLD
+folia-supported: true
+
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  lobbycore:
+    description: LobbyCore admin
+    usage: /lobbycore reload
+    permission: lobbycore.admin.reload
+
+permissions:
+  lobbycore.admin:
+    default: op
+    description: Admin perms
+  lobbycore.spawn:
+    default: true
+    description: Use /spawn
+  lobbycore.jump:
+    default: true
+    description: Use jumppads

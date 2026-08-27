@@ -1,0 +1,77 @@
+plugins {
+    id 'java'
+    id 'com.gradleup.shadow' version '9.0.0'
+    id 'xyz.jpenilla.run-paper' version '2.3.1'
+}
+
+group = 'iran.flame.network.lobby'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'papermc-repo'
+        url = 'https://repo.papermc.io/repository/maven-public/'
+    }
+    maven {
+        url = 'https://repo.extendedclip.com/content/repositories/placeholderapi/'
+    }
+    maven {
+        name = 'minecraft-libraries'
+        url = 'https://libraries.minecraft.net/'
+    }
+    maven {
+        name = 'codemc-repo'
+        url = 'https://repo.codemc.io/repository/maven-public/'
+    }
+    maven {
+        url = 'https://repo.md-5.net/content/repositories/public/'
+    }
+    maven {
+        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+    }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT'
+    compileOnly 'me.clip:placeholderapi:2.11.6'
+    compileOnly 'com.mojang:authlib:6.0.54'
+    compileOnly 'net.md-5:bungeecord-chat:1.8-SNAPSHOT'
+    implementation 'redis.clients:jedis:5.1.0'
+    implementation 'org.apache.commons:commons-pool2:2.11.1'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 17
+}
+
+tasks.shadowJar {
+    archiveClassifier = ''
+    relocate 'org.apache.commons.pool2', 'iran.flame.network.libs.pool2'
+    minimize()
+
+    doFirst {
+        println "Building with Java ${JavaVersion.current()}"
+    }
+}
+
+tasks.build {
+    dependsOn tasks.shadowJar
+}
+
+
+tasks.processResources {
+    def props = [version: version]
+    inputs.properties(props)
+    filteringCharset = 'UTF-8'
+    filesMatching('plugin.yml') {
+        expand(props)
+    }
+}

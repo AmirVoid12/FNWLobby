@@ -1,0 +1,20 @@
+items:
+  selector:
+    slot: 0
+    material: COMPASS
+    name: "&aGame Selector &7(Right Click)"
+    lore:
+      - "&7Open selectors."
+    glow: false
+    action: menu
+    data: "server-selector"
+
+  rod:
+    slot: 8
+    material: FISHING_ROD
+    name: "&bRod TP"
+    lore:
+      - "&7Cast the rod and reel in to teleport!"
+    action: none
+    data: ""
+    glow: false

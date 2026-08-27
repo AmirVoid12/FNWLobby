@@ -1,0 +1,333 @@
+menus:
+  server-selector:
+    title: "&6&lGame Selector"
+    size: 45
+    openSound: "UI_BUTTON_CLICK:0.8:1.0"
+    items:
+      survival:
+        slot: 10
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWVhYTlhYzE1NzU4ZDUxNzdhODk2NjA1OTg1ZTk4YmVhYzhmZWUwZTZiMmM2OGE4ZGMxZjNjOTFjMDc5ZmI4OSJ9fX0="
+        name: "&6Survival"
+        lore:
+          - ""
+          - "&7Survive and thrive in the world!"
+          - "&7Build, explore, and conquer!"
+          - ""
+          - "&a▶ Click to Join!"
+        glow: false
+        action: CONNECT
+        data: "survival"
+        sound: "DIG_STONE:1.0:1.0"
+
+      kbffa:
+        slot: 11
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2ZjY2Q2MjIwNGNkZjVhMTlmMzcyYWQ2MWJkMTg3NTJkZGQ5ZTRhNDEzMmIwMzExOGE4NjM3ZDI5OWQ4YjM5NiJ9fX0="
+        name: "&cKnockBack FFA"
+        lore:
+          - ""
+          - "&7Fight with knockback sticks!"
+          - "&7Last one standing wins!"
+          - ""
+          - "&a▶ Click to Join!"
+        glow: false
+        action: CONNECT
+        data: "kbffa"
+        sound: "ZOMBIE_WOOD:1.0:1.2"
+
+      skymine:
+        slot: 12
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmEyMTc5MGYyN2JlMGNiNmEwMTZiYjhjYTY0ZmI4NjYyOWVhYTE1Mzg5YWFmMTQxM2M3NGQ4N2M0NWE1OTUwMyJ9fX0="
+        name: "&bSkyMine"
+        lore:
+          - ""
+          - "&7Mine in the sky and earn rewards!"
+          - "&7Collect resources and upgrade!"
+          - ""
+          - "&a▶ Click to Join!"
+        glow: false
+        action: CONNECT
+        data: "skymine"
+        sound: "ORB_PICKUP:1.0:1.5"
+
+      practice:
+        slot: 13
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY5ZGE0ZTdiOGQ1NThhZjAyZTgwZTJlMTY2OWNlYjYwODQ4OThkYjU1OTA3ZWYzZTY2ZDlhMzI5MzI5ZTk0MSJ9fX0="
+        name: "&dPractice &7(Classic & Modern)"
+        lore:
+          - ""
+          - "&7Practice your PvP skills!"
+          - "&7Choose between Classic or Modern!"
+          - ""
+          - "&a▶ Click to Open Menu!"
+        glow: true
+        action: SUB_MENU
+        data: "practice-selector"
+        sound: "ANVIL_USE:1.0:1.0"
+
+      bedwars:
+        slot: 14
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmZiMjkwYTEzZGY4ODI2N2VhNWY1ZmNmNzk2YjYxNTdmZjY0Y2NlZTVjZDM5ZDQ2OTcyNDU5MWJhYmVlZDFmNiJ9fX0="
+        name: "&eBedWars &7(Normal & FFA)"
+        lore:
+          - ""
+          - "&7Join the BedWars!"
+          - "&7Choose between Normal or FFA mode!"
+          - ""
+          - "&a▶ Click to Open Menu!"
+        glow: true
+        action: SUB_MENU
+        data: "bedwars-selector"
+        sound: "NOTE_PLING:1.0:1.0"
+
+      soon-15:
+        slot: 15
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM0MGQ1MGQ3ZDEyOTNiYTE2ZDIzYzZkMDdhYjA2NmNkYzE1NzVjNjhiY2E2OWU5NmYwYmI2ZDFjZTFiZjFiYSJ9fX0="
+        name: "&7Soon..."
+        lore:
+          - "&8Coming soon"
+        action: EMPTY
+        data: ""
+        sound: "CLICK:0.6:1.0"
+
+      soon-16:
+        slot: 16
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM0MGQ1MGQ3ZDEyOTNiYTE2ZDIzYzZkMDdhYjA2NmNkYzE1NzVjNjhiY2E2OWU5NmYwYmI2ZDFjZTFiZjFiYSJ9fX0="
+        name: "&7Soon..."
+        lore:
+          - "&8Coming soon"
+        action: EMPTY
+        data: ""
+        sound: "CLICK:0.6:1.0"
+
+      soon-19:
+        slot: 19
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM0MGQ1MGQ3ZDEyOTNiYTE2ZDIzYzZkMDdhYjA2NmNkYzE1NzVjNjhiY2E2OWU5NmYwYmI2ZDFjZTFiZjFiYSJ9fX0="
+        name: "&7Soon..."
+        lore:
+          - "&8Coming soon"
+        action: EMPTY
+        data: ""
+        sound: "CLICK:0.6:1.0"
+
+      soon-20:
+        slot: 20
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM0MGQ1MGQ3ZDEyOTNiYTE2ZDIzYzZkMDdhYjA2NmNkYzE1NzVjNjhiY2E2OWU5NmYwYmI2ZDFjZTFiZjFiYSJ9fX0="
+        name: "&7Soon..."
+        lore:
+          - "&8Coming soon"
+        action: EMPTY
+        data: ""
+        sound: "CLICK:0.6:1.0"
+
+      soon-21:
+        slot: 21
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM0MGQ1MGQ3ZDEyOTNiYTE2ZDIzYzZkMDdhYjA2NmNkYzE1NzVjNjhiY2E2OWU5NmYwYmI2ZDFjZTFiZjFiYSJ9fX0="
+        name: "&7Soon..."
+        lore:
+          - "&8Coming soon"
+        action: EMPTY
+        data: ""
+        sound: "CLICK:0.6:1.0"
+
+      soon-22:
+        slot: 22
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM0MGQ1MGQ3ZDEyOTNiYTE2ZDIzYzZkMDdhYjA2NmNkYzE1NzVjNjhiY2E2OWU5NmYwYmI2ZDFjZTFiZjFiYSJ9fX0="
+        name: "&7Soon..."
+        lore:
+          - "&8Coming soon"
+        action: EMPTY
+        data: ""
+        sound: "CLICK:0.6:1.0"
+
+      soon-23:
+        slot: 23
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM0MGQ1MGQ3ZDEyOTNiYTE2ZDIzYzZkMDdhYjA2NmNkYzE1NzVjNjhiY2E2OWU5NmYwYmI2ZDFjZTFiZjFiYSJ9fX0="
+        name: "&7Soon..."
+        lore:
+          - "&8Coming soon"
+        action: EMPTY
+        data: ""
+        sound: "CLICK:0.6:1.0"
+
+      soon-24:
+        slot: 24
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM0MGQ1MGQ3ZDEyOTNiYTE2ZDIzYzZkMDdhYjA2NmNkYzE1NzVjNjhiY2E2OWU5NmYwYmI2ZDFjZTFiZjFiYSJ9fX0="
+        name: "&7Soon..."
+        lore:
+          - "&8Coming soon"
+        action: EMPTY
+        data: ""
+        sound: "CLICK:0.6:1.0"
+
+      soon-25:
+        slot: 25
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM0MGQ1MGQ3ZDEyOTNiYTE2ZDIzYzZkMDdhYjA2NmNkYzE1NzVjNjhiY2E2OWU5NmYwYmI2ZDFjZTFiZjFiYSJ9fX0="
+        name: "&7Soon..."
+        lore:
+          - "&8Coming soon"
+        action: EMPTY
+        data: ""
+        sound: "CLICK:0.6:1.0"
+
+      telegram:
+        slot: 38
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNkMjVkNTVjYWVkZmQ3MGVlN2YzYTgwNmFmMDAyNWYxNTNkNGJmMzRmNDFlNmVmZDQ0ZWM4ZmU3NDE5OGYzNSJ9fX0="
+        name: "&bTelegram"
+        lore:
+          - ""
+          - "&7Click to open link"
+          - ""
+          - "&et.me/mineheaven"
+        action: URL
+        data: "https://t.me/mineheaven"
+        sound: "NOTE_PLING:1.0:1.5"
+
+      instagram:
+        slot: 39
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWM4OGQ2MTYzZmFiZTdjNWU2MjQ1MGViMzdhMDc0ZTJlMmM4ODYxMWM5OTg1MzZkYmQ4NDI5ZmFhMDgxOTQ1MyJ9fX0="
+        name: "&dInstagram"
+        lore:
+          - ""
+          - "&7Click to open link"
+          - ""
+          - "&einstagram.com/mineheaven"
+        action: URL
+        data: "https://instagram.com/mineheaven"
+        sound: "NOTE_PLING:1.0:1.5"
+
+      website:
+        slot: 40
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDM4Y2YzZjhlNTRhZmMzYjNmOTFkMjBhNDlmMzI0ZGNhMTQ4NjAwN2ZlNTQ1Mzk5MDU1NTI0YzE3OTQxZjRkYyJ9fX0="
+        name: "&bWebsite"
+        lore:
+          - ""
+          - "&7Click to open link"
+          - ""
+          - "&ewww.mineheaven.ir"
+        action: URL
+        data: "https://www.mineheaven.ir"
+        sound: "NOTE_PLING:1.0:1.5"
+
+      discord:
+        slot: 41
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTJjYTI3Y2FiODc3MjI4OTZkYzY2OGM3YjliNzZlNmZjM2UyZGNlNzcwNTgzYWRmYmUxNjJhZGM5NGU5ZDgyZCJ9fX0="
+        name: "&9Discord"
+        lore:
+          - ""
+          - "&7Click to open link"
+          - ""
+          - "&ediscord.gg/GSwse7zdfj"
+        action: URL
+        data: "https://discord.gg/GSwse7zdfj"
+        sound: "NOTE_PLING:1.0:1.5"
+
+      teamspeak:
+        slot: 42
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQ1MmYwYTZmNDNlZjdhMTU2NGViZmEyMGFkOGM4ZTdmNjk0YTFmMjZjMmJhZTMwMzc2ZGJiM2NhMzE2MzZlYiJ9fX0="
+        name: "&3TeamSpeak"
+        lore:
+          - ""
+          - "&7Click to open link"
+          - ""
+          - "&ets.mineheaven.ir"
+        action: URL
+        data: "ts3server://ts.mineheaven.ir"
+        sound: "NOTE_PLING:1.0:1.5"
+
+submenus:
+  bedwars-selector:
+    title: "&e&lBedWars"
+    size: 27
+    openSound: "NOTE_PLING:0.8:1.2"
+    items:
+      bedwars-normal:
+        slot: 11
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGY4NGE0MzU1ZWU2MTBhMTJlOWRlMzEzMzg4ZDA2ZTZjN2VlZmU1YjFmOGQxMjU3YzIyNzExZjg0NzI0YzljZSJ9fX0="
+        name: "&eBedWars Normal"
+        lore:
+          - ""
+          - "&7Join the classic BedWars!"
+          - "&7Protect your bed and destroy others!"
+          - ""
+          - "&a▶ Click to Join!"
+          - ""
+        glow: true
+        action: CONNECT
+        data: "bwlobby1"
+        sound: "NOTE_PLING:1.0:1.2"
+
+      bedwars-ffa:
+        slot: 15
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzAyN2FkNjUzOWU5NjFhNWMyNmU1ZDUzNTljNzYxZGZmMzkzOGMyODNhZDA5MjUzMjJkODkyMGRjYjY1OWZjZCJ9fX0="
+        name: "&cBedWars FFA"
+        lore:
+          - ""
+          - "&7Free for all BedWars mode!"
+          - "&7Fight against everyone!"
+          - ""
+          - "&a▶ Click to Join!"
+          - ""
+        glow: true
+        action: CONNECT
+        data: "bwffa"
+        sound: "EXPLODE:1.0:1.2"
+
+  practice-selector:
+    title: "&d&lPractice"
+    size: 27
+    openSound: "ANVIL_USE:0.8:1.2"
+    items:
+      practice-classic:
+        slot: 11
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFlMzg1NWY5NTJjZDRhMDNjMTQ4YTk0NmUzZjgxMmE1OTU1YWQzNWNiY2I1MjYyN2VhNGFjZDQ3ZDMwODEifX19"
+        name: "&dClassic Practice"
+        lore:
+          - ""
+          - "&7Traditional PvP practice!"
+          - "&7Master the classic combat!"
+          - ""
+          - "&a▶ Click to Join!"
+          - ""
+        glow: true
+        action: CONNECT
+        data: "practice"
+        sound: "ANVIL_USE:1.0:1.0"
+
+      practice-modern:
+        slot: 15
+        material: SKULL_ITEM
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzYxMTJhMDUxNDA5ZjIyYjUyMDYwMGQwOTljYWZlNDQxMWI4MGJlMzEwYzk0MmMyODg1ZGNiYWM2MjM4ZDdiZiJ9fX0="
+        name: "&5Modern Practice"
+        lore:
+          - ""
+          - "&7Advanced PvP practice!"
+          - "&7Experience modern combat!"
+          - ""
+          - "&a▶ Click to Join!"
+          - ""
+        glow: true
+        action: CONNECT
+        data: "modernpractice"
+        sound: "ANVIL_USE:1.0:1.2"
